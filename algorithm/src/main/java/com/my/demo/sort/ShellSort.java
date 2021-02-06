@@ -3,19 +3,16 @@ package com.my.demo.sort;
 import java.util.Arrays;
 
 /**
- * Licensed to CMIM,Inc. under the terms of the CMIM
- * Software License version 1.0.
- * See the NOTICE file distributed with this work for additional
- * information regarding copyright ownership.
- * ----------------------------------------------------------------------------
- * Date        Author        Version        Comments
- * 2021/2/6     ffdeng         1.0       Initial Version
+ * Date        Author
+ * 2021/2/6     ffdeng
  **/
 public class ShellSort {
 
     public static void main(String[] args) {
-        int[] arr = {352,46754754,5,32,32,4,234,23,469};
+        int[] arr = CreateArrays.getArray();
+
         shellSort(arr);
+
         System.out.println(Arrays.toString(arr));
     }
 
