@@ -29,22 +29,22 @@ public class MergeSort implements ArraysSort {
 
     public void mergeSort(int[] arr, int start, int mid, int end) {
         int[] result = new int[end - start + 1];
-        int begin = start;
-        int midd = mid + 1;
+        int i = start;
+        int j = mid + 1;
         int index = 0;
-        while (begin <= mid && midd <= end) {
-            if (arr[begin] <= arr[midd]) {
-                result[index++] = arr[begin++];
+        while (i <= mid && j <= end) {
+            if (arr[i] <= arr[j]) {
+                result[index++] = arr[i++];
             } else {
-                result[index++] = arr[midd++];
+                result[index++] = arr[j++];
             }
         }
 
-        while (begin <= mid) {
-            result[index++] = arr[begin++];
+        while (i <= mid) {
+            result[index++] = arr[i++];
         }
-        while (midd <= end) {
-            result[index++] = arr[midd++];
+        while (j <= end) {
+            result[index++] = arr[j++];
         }
 
         index = 0;
