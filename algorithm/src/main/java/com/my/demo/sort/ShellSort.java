@@ -6,18 +6,19 @@ import java.util.Arrays;
  * Date        Author
  * 2021/2/6     ffdeng
  **/
-public class ShellSort {
+public class ShellSort implements ArraysSort {
 
     public static void main(String[] args) {
-        int[] arr = CreateArrays.getArray();
+        ShellSort shellSort = new ShellSort();
+        int[] arr = shellSort.getArr();
+        shellSort.sort(arr);
 
-        shellSort(arr);
-
-        System.out.println(Arrays.toString(arr));
+        shellSort.printArr(arr);
     }
 
-    public static void shellSort(int[] arr) {
-        int length = arr.length;
+    @Override
+    public void sort(int[] arr) {
+        int length = ArraysSort.length;
         int gar = length / 2;
 
         while (gar > 0) {

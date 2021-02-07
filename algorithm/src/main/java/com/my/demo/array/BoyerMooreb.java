@@ -28,7 +28,7 @@ public class BoyerMooreb {
                 count--;
             }
         }
-        
+
         return result;
     }
 
