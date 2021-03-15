@@ -19,6 +19,6 @@ public class Gcb {
         if (b == 0) {
             return a;
         }
-        return gcb(b, a- a / b * b);
+        return gcb(b, a - a / b * b);
     }
 }
