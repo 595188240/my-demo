@@ -33,6 +33,7 @@ public class T3 {
                     result = set.size();
                 }
             } else {
+                // aab
                 i -= set.size();
                 set.clear();
             }
