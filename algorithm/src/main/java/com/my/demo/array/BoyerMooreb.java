@@ -10,7 +10,7 @@ package com.my.demo.array;
 public class BoyerMooreb {
 
     public static void main(String[] args) {
-        int[] arr = {3,3,3,3,3,3,3,1,1,1,2,2};
+        int[] arr = {3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 2, 2};
         System.out.println(boyerMooreb(arr));
     }
 
