@@ -1,38 +1,26 @@
 package com.my.demo.decorator;
 
 /**
- * Date        Author        Version        Comments
- * 2021/4/16     ffdeng         1.0       Initial Version
- *装饰模式
+ * Date        Author
+ * 2021/4/25     ffdeng
  **/
-public class Person {
+public class Person implements Human {
 
-    private String name;
-
-    public Person() {
+    @Override
+    public void wearClothes() {
+        System.out.println("穿什么呢。。");
     }
 
-    public Person(String name) {
-        this.name = name;
-    }
-
-    public void Show() {
-        System.out.print("装扮的" + name);
+    @Override
+    public void walkToWhere() {
+        System.out.println("去哪里呢。。");
     }
 
     public static void main(String[] args) {
-        Person person = new Person("小李");
-        System.out.println("第一种装饰");
-
-        TShirts tShirts = new TShirts();
-        tShirts.Decorate(person);
-        tShirts.Show();
-
-        System.out.println();
-        System.out.println("第二种装饰");
-        BigTrouser bigTrouser = new BigTrouser();
-        bigTrouser.Decorate(person);
-        bigTrouser.Show();
-
+        Person person = new Person();
+        Decorator decorator = new DecoratorTwo(new DecoratorOne(
+                new DecoratorZero(person)));
+        decorator.wearClothes();
+        decorator.walkToWhere();
     }
 }
