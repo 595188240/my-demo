@@ -11,7 +11,7 @@ public class Gcb {
 
     public static void main(String[] args) {
         int a = 1024;
-        int b= 124;
+        int b = 124;
         System.out.println(gcb(a, b));
     }
 
