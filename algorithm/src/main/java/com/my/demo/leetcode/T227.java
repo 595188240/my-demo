@@ -33,8 +33,8 @@ public class T227 {
             if (Character.isDigit(temp)) {
                 num = num * 10 + temp - '0';
             }
-            boolean falg = !Character.isDigit(temp) && temp != ' ' || i == chars.length - 1;
-            if (falg) {
+            boolean flag = !Character.isDigit(temp) && temp != ' ' || i == chars.length - 1;
+            if (flag) {
                 switch (preSign) {
                     case '+':
                         stack.push(num);
