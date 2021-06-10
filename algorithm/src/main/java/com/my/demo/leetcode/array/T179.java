@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class T179 {
 
     public static void main(String[] args) {
-            int[] nums = {10,2,9,39,17};
+        int[] nums = {10, 2, 9, 39, 17};
         System.out.println(largestNumber(nums));
     }
 
