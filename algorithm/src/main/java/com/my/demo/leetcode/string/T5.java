@@ -21,6 +21,10 @@ public class T5 {
 
         System.out.println(longestPalindrome3(s));
         System.out.println("haoshi:" + (System.currentTimeMillis() - b3));
+
+        long b4 = System.currentTimeMillis();
+        System.out.println(longestPalindrome4(s));
+        System.out.println("haoshi:" + (System.currentTimeMillis() - b4));
     }
 
     public static String longestPalindrome(String s) {
@@ -108,5 +112,39 @@ public class T5 {
             len = 1;
         }
         return s.substring(maxStart + 1, maxStart + maxLen + 1);
+    }
+
+    public static String longestPalindrome4(String s) {
+        if (s == null || s.length() == 0) {
+            return "";
+        }
+
+        int length = s.length();
+        int leftStart = 0;
+        int len = 1;
+        int maxLen = 0;
+        for (int i = 0; i < length; i++) {
+            int left = i - 1;
+            int right = i + 1;
+            while (left >= 0 && s.charAt(left) == s.charAt(i)) {
+                left--;
+                len++;
+            }
+            while (right < length && s.charAt(right) == s.charAt(i)) {
+                len++;
+                right++;
+            }
+            while (left >= 0 && right < length && s.charAt(left) == s.charAt(right)) {
+                left--;
+                right++;
+                len += 2;
+            }
+            if (len > maxLen) {
+                maxLen = len;
+                leftStart = left;
+            }
+            len = 1;
+        }
+        return s.substring(leftStart + 1, leftStart + maxLen + 1);
     }
 }
