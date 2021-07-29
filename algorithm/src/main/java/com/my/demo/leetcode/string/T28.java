@@ -8,10 +8,11 @@ package com.my.demo.leetcode.string;
 public class T28 {
 
     public static void main(String[] args) {
-        String haystack = "ippimississippi1";
-        String needle = "ippimississippi";
+        String haystack = "abbccefeghryz";
+        String needle = "efeg";
         System.out.println(strStr(haystack, needle));
         System.out.println(strStr2(haystack, needle));
+        System.out.println(haystack.indexOf(needle));
     }
 
     public static int strStr(String haystack, String needle) {
