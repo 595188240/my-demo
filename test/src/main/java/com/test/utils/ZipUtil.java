@@ -10,13 +10,15 @@ import java.util.zip.ZipInputStream;
  */
 public class ZipUtil {
 
-    public static Integer fileType = 2;
+    public static Integer fileType = 1;
 
     public static String subjectId = "dea7rf";
 
+    public static String pathName = "C:\\Users\\ffdeng2\\Desktop\\EEGQC\\dea7rf_N-back.zip";
+
     public static void main(String[] args) {
         ZipInputStream mZipin = null;
-        File mfie = new File("C:\\Users\\ffdeng2\\Desktop\\EEGBHV\\dea7rf_N-back_BHV.zip");
+        File mfie = new File(pathName);
         try {
             mZipin = new ZipInputStream(new FileInputStream(mfie));
         } catch (FileNotFoundException e) {
@@ -25,7 +27,7 @@ public class ZipUtil {
         ZipEntry mZipen;
         ZipFile mZipFile = null;
         try {
-            mZipFile = new ZipFile("C:\\Users\\ffdeng2\\Desktop\\EEGBHV\\dea7rf_N-back_BHV.zip");
+            mZipFile = new ZipFile(pathName);
             String directory = null;
             while ((mZipen = mZipin.getNextEntry()) != null) {
                 if (!mZipen.isDirectory()) {
@@ -38,6 +40,9 @@ public class ZipUtil {
                         if (!fileName.contains(directory)
                                 && !fileName.equals(subjectId + "_N-back" + ".mat")) {
                             System.out.println("錯誤！!");
+                        }
+                        if (fileName.endsWith(".mat")) {
+                            System.out.println("mat--->>>" + directory + fileName);
                         }
                     }
                     if (fileType.equals(2)) {

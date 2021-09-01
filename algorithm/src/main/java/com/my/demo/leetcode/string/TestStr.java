@@ -1,5 +1,7 @@
 package com.my.demo.leetcode.string;
 
+import java.util.Arrays;
+
 /**
  * @author ffdeng
  * @date 2021/6/9 17:18
@@ -7,8 +9,7 @@ package com.my.demo.leetcode.string;
 public class TestStr {
 
     public static void main(String[] args) {
-        String a = "";
-        String strA = "sgdsljgds;gd;ls;lgkd;skgdsjklgjdlks";
-        System.out.println(strA.contains(a));
+       int[] rel = new int[2];
+        System.out.println(Arrays.toString(rel));
     }
 }
