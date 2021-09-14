@@ -1,5 +1,6 @@
 package com.my.demo.utils.matutil;
 
+import com.alibaba.fastjson.JSON;
 import us.hebi.matlab.mat.format.Mat5;
 import us.hebi.matlab.mat.format.Mat5File;
 import us.hebi.matlab.mat.types.Array;
@@ -19,7 +20,7 @@ public class Mat5Util {
     public static String filePath = "C:\\Users\\ffdeng2\\Desktop\\task-rest\\sub03_task-rest_EEG\\results_QA_sub03_task-rest.mat";
 
     public static void main(String[] args) throws IOException {
-        System.out.println(readMatFile(filePath));
+        System.out.println(JSON.toJSONString(readMatFile(filePath)));
     }
 
     public static MetricsResult readMatFile(String path) throws IOException {
