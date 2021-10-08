@@ -17,9 +17,6 @@ public class T518 {
        int[] result = new int[amount + 1];
        result[0] = 1;
         for (int coin : coins) {
-            if (coin > amount) {
-                break;
-            }
             for (int i = coin; i <= amount; i++) {
                 result[i] += result[i - coin];
             }
