@@ -13,9 +13,9 @@ public class TestThread extends Thread {
 
     @Override
     public void run() {
-//        System.out.println(DDLSingleton.getInstance().hashCode());
-//        System.out.println(EnumSingleton.getInstance().hashCode());
-        System.out.println(Singleton.getInstance().hashCode());
+        //System.out.println(DDLSingleton.getInstance().hashCode());
+        System.out.println(EnumSingleton.getInstance().hashCode());
+//        System.out.println(Singleton.getInstance().hashCode());
     }
 
     public static void main(String[] args) {
