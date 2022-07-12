@@ -7,8 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d91cdfd-bf9c-4558-9ef0-84ef3f06c5c9" name="Default Changelist" comment="形成三角形的三元组个数">
-      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/my/demo/leetcode/array/simple/T1005.java" afterDir="false" />
+    <list default="true" id="6d91cdfd-bf9c-4558-9ef0-84ef3f06c5c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/algorithm/src/main/java/com/my/demo/leetcode/medium/MagicDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -398,13 +398,13 @@
       <recent name="com.my.demo.leetcode.string" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T1005">
-    <configuration name="T1005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.demo.leetcode.array.simple.T1005" />
+  <component name="RunManager" selected="Application.MagicDictionary">
+    <configuration name="MagicDictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.demo.leetcode.medium.MagicDictionary" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.my.demo.leetcode.array.simple.*" />
+          <option name="PATTERN" value="com.my.demo.leetcode.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -412,12 +412,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T318" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.my.demo.leetcode.medium.T318" />
+    <configuration name="T1005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.my.demo.leetcode.array.simple.T1005" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.my.demo.leetcode.medium.*" />
+          <option name="PATTERN" value="com.my.demo.leetcode.array.simple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -464,33 +464,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.T318" />
       <item itemvalue="Application.T397" />
       <item itemvalue="Application.T859" />
       <item itemvalue="Application.T506" />
       <item itemvalue="Application.T1005" />
+      <item itemvalue="Application.MagicDictionary" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MagicDictionary" />
         <item itemvalue="Application.T1005" />
         <item itemvalue="Application.T506" />
         <item itemvalue="Application.T859" />
         <item itemvalue="Application.T397" />
-        <item itemvalue="Application.T318" />
       </list>
     </recent_temporary>
   </component>
@@ -571,6 +569,7 @@
       <workItem from="1638413903973" duration="1452000" />
       <workItem from="1638419454687" duration="1954000" />
       <workItem from="1638514849766" duration="1436000" />
+      <workItem from="1657532482652" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="测试提交">
       <created>1623222703304</created>
@@ -803,7 +802,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638424226689</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="leetcode">
+      <created>1657186646577</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1657186646577</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
