@@ -1,4 +1,4 @@
-package com.my.demo.simplefactorypattern;
+package com.my.demo.simplefactory;
 
 import org.apache.commons.lang3.StringUtils;
 

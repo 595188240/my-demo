@@ -1,4 +1,4 @@
-package com.my.demo.strategypattern;
+package com.my.demo.strategy;
 
 /**
  * Date        Author
